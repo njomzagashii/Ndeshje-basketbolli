@@ -23,3 +23,4 @@ void inicializoNdeshjen(Ndeshja & ndeshja){
     cout << "Vendosni kohen e ndeshjes (ne minuta): ";
     cin >> ndeshja.kohaNdeshjes; 
 }
+
