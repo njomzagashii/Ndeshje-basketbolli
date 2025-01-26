@@ -1,4 +1,4 @@
-# Ndeshje Basketbolli
+# Ndeshje Basketbolli🏀
 
 ## Përshkrimi
 Ky projekt është një simulim i një ndeshjeje basketbolli i shkruar në **C++**. Ai mund të përdoret për të regjistruar informacionet mbi ekipet, numrin e lojtarëve, kohëzgjatjen e ndeshjes dhe rezultatet. 
