@@ -24,3 +24,7 @@ void inicializoNdeshjen(Ndeshja & ndeshja){
     cin >> ndeshja.kohaNdeshjes; 
 }
 
+/*TODO:
+1. Funksioni për të regjistruar rezultatin
+2. Funksioni për të afishuar informacionin e ndeshjes
+3. Thirja e funksioneve dhe implementimi i menusë
