@@ -5,7 +5,7 @@ using namespace std;
 //Struktura për të ruajtur informacionet e ndeshjes
 struct Ndeshja{
     string ekipi1;
-    string ekipi2;
+    string ekipi 2;
     int nrLojtareve;
     int kohaNdeshjes;
     int rezultatiEkipi1;
@@ -24,15 +24,7 @@ void inicializoNdeshjen(Ndeshja & ndeshja){
     cin >> ndeshja.kohaNdeshjes; 
 }
 
-//Funksioni për të regjistruar rezultatin
-void regjistroRezultatin(Ndeshja & ndeshja){
-    cout << "Jepni rezultatin e ekipit " << ndeshja.ekipi1 << ": ";
-    cin >> ndeshja.rezultatiEkipi1;
-    cout << "Jepni rezultatin e ekipit " << ndeshja.ekipi2 << ": ";
-    cin >> ndeshja.rezultatiEkipi2;
-}
-
 /*TODO:
+1. Funksioni për të regjistruar rezultatin
 2. Funksioni për të afishuar informacionin e ndeshjes
 3. Thirja e funksioneve dhe implementimi i menusë
-*/
