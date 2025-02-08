@@ -36,3 +36,36 @@ void regjistroRezultatin(Ndeshja & ndeshja){
 2. Funksioni për të afishuar informacionin e ndeshjes
 3. Thirja e funksioneve dhe implementimi i menusë
 */
+int main() {
+    Ndeshja ndeshja;
+    int zgjedhja;
+
+    do {
+        cout << “\n-- Menuja —“ << endl;
+        cout << “1. Inicializo ndeshjen” << endl;
+        cout << “2. Regjistro rezultatin” << endl;
+        cout << “3. Afisho informacionin e ndeshjes” << endl;
+        cout << “4. Dil” << endl;
+        cout << “Zgjedhja juaj: “;
+        cin >> zgjedhja;
+
+        switch (zgjedhja) {
+            case 1:
+                inicializoNdeshjen(ndeshja);
+                break;
+            case 2:
+                regjistroRezultatin(ndeshja);
+                break;
+            case 3:
+                afishoNdeshjen(ndeshja);
+                break;
+            case 4:
+                cout << “Po dilni nga programi. Faleminderit!” << endl;
+                break;
+            default:
+                cout << “Zgjedhje e pavlefshme. Ju lutem provoni perseri.” << endl;
+  }
+    } while (zgjedhja != 4);
+
+    return 0;
+}
