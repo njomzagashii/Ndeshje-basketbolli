@@ -23,6 +23,23 @@ void inicializoNdeshjen(Ndeshja & ndeshja){
     cout << "Vendosni kohen e ndeshjes (ne minuta): ";
     cin >> ndeshja.kohaNdeshjes; 
 }
+// Funksioni për të afishuar informacionin e ndeshjes
+void afishoNdeshjen(const Ndeshja &ndeshja) {
+    cout << "\n-- Informacioni i Ndeshjes —" << endl;
+    cout << "Ekipi 1: " << ndeshja.ekipi1 << endl;
+    cout << "Ekipi 2: " << ndeshja.ekipi2 << endl;
+    cout << "Numri i Lojtareve: " << ndeshja.nrLojtareve << endl;
+    cout << "Koha e Ndeshjes: " << ndeshja.kohaNdeshjes << " minuta" << endl;
+    cout << "Rezultati: " << ndeshja.ekipi1 << " " << ndeshja.rezultatiEkipi1
+         << " - " << ndeshja.rezultatiEkipi2 << " " << ndeshja.ekipi2 << endl;
+    if (ndeshja.rezultatiEkipi1 > ndeshja.rezultatiEkipi2) {
+        cout << "Fituesi: " << ndeshja.ekipi1 << endl;
+    } else if (ndeshja.rezultatiEkipi1 < ndeshja.rezultatiEkipi2) {
+        cout << "Fituesi: " << ndeshja.ekipi2 << endl;
+    } else {
+        cout << "Rezultati: Barazim!" << endl;
+    }
+}
 
 //Funksioni për të regjistruar rezultatin
 void regjistroRezultatin(Ndeshja & ndeshja){
@@ -31,6 +48,7 @@ void regjistroRezultatin(Ndeshja & ndeshja){
     cout << "Jepni rezultatin e ekipit " << ndeshja.ekipi2 << ": ";
     cin >> ndeshja.rezultatiEkipi2;
 }
+
 
 /*TODO:
 2. Funksioni për të afishuar informacionin e ndeshjes
@@ -41,12 +59,12 @@ int main() {
     int zgjedhja;
 
     do {
-        cout << “\n-- Menuja —“ << endl;
-        cout << “1. Inicializo ndeshjen” << endl;
-        cout << “2. Regjistro rezultatin” << endl;
-        cout << “3. Afisho informacionin e ndeshjes” << endl;
-        cout << “4. Dil” << endl;
-        cout << “Zgjedhja juaj: “;
+        cout << "\n-- Menuja —" << endl;
+        cout << "1. Inicializo ndeshjen" << endl;
+        cout << "2. Regjistro rezultatin" << endl;
+        cout << "3. Afisho informacionin e ndeshjes" << endl;
+        cout << "4. Dil" << endl;
+        cout << "Zgjedhja juaj: ";
         cin >> zgjedhja;
 
         switch (zgjedhja) {
@@ -60,14 +78,15 @@ int main() {
                 afishoNdeshjen(ndeshja);
                 break;
             case 4:
-                cout << “Po dilni nga programi. Faleminderit!” << endl;
+                cout << "Po dilni nga programi. Faleminderit!" << endl;
                 break;
             default:
-                cout << “Zgjedhje e pavlefshme. Ju lutem provoni perseri.” << endl;
+                cout << "Zgjedhje e pavlefshme. Ju lutem provoni perseri." << endl;
   }
     } while (zgjedhja != 4);
 
-    return 0;
+return 0;
+
 }
 
 
