@@ -25,7 +25,7 @@ void inicializoNdeshjen(Ndeshja & ndeshja){
 }
 // Funksioni për të afishuar informacionin e ndeshjes
 void afishoNdeshjen(const Ndeshja &ndeshja) {
-    cout << "\n-- Informacioni i Ndeshjes —" << endl;
+    cout << "\n--- Informacioni i Ndeshjes ---" << endl;
     cout << "Ekipi 1: " << ndeshja.ekipi1 << endl;
     cout << "Ekipi 2: " << ndeshja.ekipi2 << endl;
     cout << "Numri i Lojtareve: " << ndeshja.nrLojtareve << endl;
