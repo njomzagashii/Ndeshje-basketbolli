@@ -59,7 +59,7 @@ int main() {
     int zgjedhja;
 
     do {
-        cout << "\n-- Menuja —" << endl;
+        cout << "\n--- Menuja ---" << endl;
         cout << "1. Inicializo ndeshjen" << endl;
         cout << "2. Regjistro rezultatin" << endl;
         cout << "3. Afisho informacionin e ndeshjes" << endl;
