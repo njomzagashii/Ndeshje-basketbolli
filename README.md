@@ -29,3 +29,5 @@ Programi gjithashtu përcakton fituesin bazuar në rezultatet e futura dhe mund 
    ```bash
    g++ ndeshja_basketbolli.cpp -o ndeshja_basketbolli
    ./ndeshja_basketbolli
+
+   ![Informacionet e ndeshjes së basketbollit](screenshot(4).png)
